@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BLCollectionViewCell.h"
+#import "BLCollectionViewFlowLayout.h"
 
 static NSString *cellID = @"cellID";
 @interface ViewController () <UICollectionViewDataSource>
@@ -26,7 +27,7 @@ static NSString *cellID = @"cellID";
                  [UIImage imageNamed:@"02"],
                  [UIImage imageNamed:@"03"]
                  ];
-    UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc] init];
+    BLCollectionViewFlowLayout *flowlayout = [[BLCollectionViewFlowLayout alloc] init];
     
     UICollectionView *cv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 200) collectionViewLayout:flowlayout];
     cv.backgroundColor = [UIColor lightGrayColor];
@@ -42,7 +43,7 @@ static NSString *cellID = @"cellID";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     BLCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
+    cell.image = imageArr[indexPath.row % 3];
     return cell;
 }
 

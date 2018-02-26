@@ -1,5 +1,5 @@
 //
-//  BLCollectionViewCell.h
+//  BLCollectionViewFlowLayout.h
 //  CoverFlowDemo
 //
 //  Created by 边雷 on 2018/2/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLCollectionViewCell : UICollectionViewCell
-
-@property (nonatomic , strong) UIImage *image;
+@interface BLCollectionViewFlowLayout : UICollectionViewFlowLayout
 
 @end

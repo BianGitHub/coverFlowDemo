@@ -14,6 +14,7 @@
 		11FC5CE22043E515008074DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FC5CE02043E515008074DF /* LaunchScreen.storyboard */; };
 		11FC5CE52043E515008074DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC5CE42043E515008074DF /* main.m */; };
 		11FC5CF72043EC61008074DF /* BLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC5CF62043EC61008074DF /* BLCollectionViewCell.m */; };
+		11FC5CFA2043EDB1008074DF /* BLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC5CF92043EDB1008074DF /* BLCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		11FC5CE42043E515008074DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11FC5CF52043EC61008074DF /* BLCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCollectionViewCell.h; sourceTree = "<group>"; };
 		11FC5CF62043EC61008074DF /* BLCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCollectionViewCell.m; sourceTree = "<group>"; };
+		11FC5CF82043EDB1008074DF /* BLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		11FC5CF92043EDB1008074DF /* BLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		11FC5CEE2043E56D008074DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				11FC5CF82043EDB1008074DF /* BLCollectionViewFlowLayout.h */,
+				11FC5CF92043EDB1008074DF /* BLCollectionViewFlowLayout.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				11FC5CDA2043E515008074DF /* ViewController.m in Sources */,
 				11FC5CE52043E515008074DF /* main.m in Sources */,
 				11FC5CF72043EC61008074DF /* BLCollectionViewCell.m in Sources */,
+				11FC5CFA2043EDB1008074DF /* BLCollectionViewFlowLayout.m in Sources */,
 				11FC5CD72043E515008074DF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
