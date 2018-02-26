@@ -12,6 +12,7 @@
 
 // 准备布局
 - (void)prepareLayout {
+    [super prepareLayout];
     
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
@@ -21,6 +22,29 @@
     
     // 间距
     self.minimumLineSpacing = 0;
+}
+
+// cell对应的属性修改方法
+- (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
+    
+    // 获取之前布局好的attr
+    NSArray<UICollectionViewLayoutAttributes *> *oldAttr = [super layoutAttributesForElementsInRect:rect];
+    
+    // 创建新的集合
+    NSMutableArray *newAttr = [NSMutableArray array];
+    
+    [oldAttr enumerateObjectsUsingBlock:^(UICollectionViewLayoutAttributes * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        UICollectionViewLayoutAttributes *newObj = obj.copy;
+        
+        // 修改属性
+        
+        
+        [newAttr addObject:newObj];
+        
+    }];
+    
+    return newAttr;
 }
 
 @end
