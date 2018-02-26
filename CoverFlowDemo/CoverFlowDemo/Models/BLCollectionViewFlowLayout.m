@@ -24,6 +24,14 @@
     self.minimumLineSpacing = 0;
 }
 
+#pragma mark - 只要显示的区域发生变化,就重新计算布局!
+// Invalidate 失效! 返回YES! 只要显示的区域发生改变,就让布局失效!
+// 重新计算布局!
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+    
+    return YES;
+}
+
 // cell对应的属性修改方法
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     
@@ -38,6 +46,25 @@
         UICollectionViewLayoutAttributes *newObj = obj.copy;
         
         // 修改属性
+        // MARK: - 1.缩放
+        // 1.屏幕中线的位置
+        CGFloat screenCenterX = self.collectionView.bounds.size.width * 0.5 + self.collectionView.contentOffset.x;
+        
+        // 2.每个cell的中心的x!!
+        CGFloat itemCenterX = newObj.center.x;
+        
+        // 3.计算距离
+        CGFloat distance = screenCenterX - itemCenterX;
+        
+        // 4.将距离转换成缩放的比例!
+        CGFloat scale = 1 - ABS(distance) / self.collectionView.bounds.size.width;
+        
+        CATransform3D transform = CATransform3DIdentity;
+
+        // 缩放
+        transform = CATransform3DScale(transform, scale, scale, 1);
+        
+        newObj.transform3D = transform;
         
         
         [newAttr addObject:newObj];
