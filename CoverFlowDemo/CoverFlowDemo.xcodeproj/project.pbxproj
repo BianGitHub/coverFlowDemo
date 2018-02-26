@@ -15,6 +15,7 @@
 		11FC5CE52043E515008074DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC5CE42043E515008074DF /* main.m */; };
 		11FC5CF72043EC61008074DF /* BLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC5CF62043EC61008074DF /* BLCollectionViewCell.m */; };
 		11FC5CFA2043EDB1008074DF /* BLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC5CF92043EDB1008074DF /* BLCollectionViewFlowLayout.m */; };
+		11FC5CFD204401AB008074DF /* BLcoverFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC5CFC204401AB008074DF /* BLcoverFlowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		11FC5CF62043EC61008074DF /* BLCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCollectionViewCell.m; sourceTree = "<group>"; };
 		11FC5CF82043EDB1008074DF /* BLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		11FC5CF92043EDB1008074DF /* BLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		11FC5CFB204401AB008074DF /* BLcoverFlowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLcoverFlowView.h; sourceTree = "<group>"; };
+		11FC5CFC204401AB008074DF /* BLcoverFlowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLcoverFlowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 			children = (
 				11FC5CF52043EC61008074DF /* BLCollectionViewCell.h */,
 				11FC5CF62043EC61008074DF /* BLCollectionViewCell.m */,
+				11FC5CFB204401AB008074DF /* BLcoverFlowView.h */,
+				11FC5CFC204401AB008074DF /* BLcoverFlowView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				11FC5CE52043E515008074DF /* main.m in Sources */,
 				11FC5CF72043EC61008074DF /* BLCollectionViewCell.m in Sources */,
 				11FC5CFA2043EDB1008074DF /* BLCollectionViewFlowLayout.m in Sources */,
+				11FC5CFD204401AB008074DF /* BLcoverFlowView.m in Sources */,
 				11FC5CD72043E515008074DF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

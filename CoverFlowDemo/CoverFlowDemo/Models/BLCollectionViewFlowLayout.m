@@ -15,7 +15,7 @@
     [super prepareLayout];
     
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    
+//    self.collectionView.bounces = NO;
     CGFloat itemH = self.collectionView.bounds.size.height * 0.8;
     CGFloat itemW = itemH;
     self.itemSize = CGSizeMake(itemW, itemH);
